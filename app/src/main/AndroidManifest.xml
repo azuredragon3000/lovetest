@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.boitinhyeuazure">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BÓI TÌNH YÊU"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.boitinhyeuazure">
+        <activity android:name=".quiz.QuizChild"></activity>
+        <activity android:name=".quiz.QuizMain" />
+        <activity
+            android:name=".demsotuoi.HowOldAreYou"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".minigame.Minigame"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".boitinhyeu.BoiTinhYeuMain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".boitinhyeu.BoiTinhYeuChild"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8404443559572571~6788038548" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

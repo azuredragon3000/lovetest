@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    android:padding="16dp"
+    tools:context=".quiz.QuizMain">
+
+    <TextView
+        android:id="@+id/chude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRẮC NGHIỆM TÌNH YÊU"
+        android:textSize="25sp"
+        android:fontFamily="@font/my_custom_font"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/kq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chude"
+        android:textSize="18sp"
+        android:fontFamily="@font/my_custom_font"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        />
+
+    <ImageView
+        android:id="@+id/danhchochang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chude"
+        android:background="@drawable/boy"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dành cho nàng"
+        android:layout_below="@+id/danhchochang"/>
+
+    <ImageView
+        android:id="@+id/danhchonang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chude"
+        android:background="@drawable/girl"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dành cho nàng"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/danhchonang"/>
+
+    <ImageView
+        android:id="@+id/danhchocahai"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chude"
+        android:background="@drawable/both2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dành cho nàng"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/danhchocahai"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/absoluteLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    tools:context=".boitinhyeu.BoiTinhYeuMain">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/manName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Tên Của Bạn Nam"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/my_custom_font"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/ic_launcher_background"
+        app:shapeAppearance="@style/Rounded">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:background="@color/ic_launcher_background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/womanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Tên Của Bạn Nữ"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/my_custom_font"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/ic_launcher_background"
+        android:layout_below="@+id/manName"
+        app:shapeAppearance="@style/Rounded">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:background="@color/ic_launcher_background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KIỂM TRA TÌNH YÊU"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/my_custom_font"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/womanName"
+        android:background="@drawable/check_love"/>
+
+
+</RelativeLayout>
